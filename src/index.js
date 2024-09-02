@@ -6,6 +6,8 @@ require("dotenv-safe").config();
 
 const db = require("./utils/db")
 const config = require("./config")
+const command_register = require("./modules/command_register")
+const listener_register = require("./modules/listener_register")
 const send_systemlog = require("./modules/send_systemlog")
 const {system_color} = require("./commons/embed_color")
 
@@ -31,6 +33,10 @@ process.on("SIGINT", ()=>{
 
 client.once("ready", async (c) =>{
     console.info(`Login! ${c.user.tag}`)
+
+    listener_register(client)
+    await command_register(client)
+
     const embed = new EmbedBuilder()
         .setTitle(`${package_json.name}が起動しました`)
         .setColor(system_color.INFO)
