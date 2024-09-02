@@ -14,8 +14,10 @@
   "author": "huda0209",
   "license": "MIT",
   "dependencies": {
+    "discord-api-types": "^0.37.98",
     "discord.js": "^14.15.3",
-    "dotenv-safe": "^9.1.0"
+    "dotenv-safe": "^9.1.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
