@@ -1,0 +1,23 @@
+{
+  "name": "yaminabe-bot-v3",
+  "version": "0.0.1",
+  "description": "yaminabe-bot-v3 is a discord bot updated to version 3.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "cross-env NODE_ENV=development node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamNABE/yaminabe-bot-v3.git"
+  },
+  "author": "huda0209",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv-safe": "^9.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
